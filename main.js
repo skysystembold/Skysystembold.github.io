@@ -9,8 +9,6 @@ const scoreAcceleration = document.querySelector(`#acceleration`)
 
 const ctx = myCanvas.getContext(`2d`)
 ctx.imageSmoothingEnabled = false;
-const birtImage = new Image();
-birtImage.src = `birt.png`
 randomNumber1 = Math.floor((Math.random()*200)+100)
 obs1 = {position:200, sizeX:50,sizeY:randomNumber1
 }
@@ -51,7 +49,7 @@ function frames() {
    }
   }
  }
- ctx.fillStyle = "#EBEBEB"
+ ctx.fillStyle = "white"
  ctx.fillRect(obs1.position,0,obs1.sizeX,obs1.sizeY)
  ctx.fillRect(obs1.position,obs1.sizeY + 120,obs1.sizeX,500)
  if (moveOk) {
@@ -89,7 +87,7 @@ function frames() {
   stateScore1 = true
  }
  //TODAS LAS IMAGENES !!
- ctx.drawImage(birtImage,50-5,altura-5,sizeRect+10,sizeRect+10)
+ 
  //socore
  if (obs1.position < 0 && stateScore1) {
   score++
