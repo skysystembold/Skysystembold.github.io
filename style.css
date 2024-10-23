@@ -1,0 +1,64 @@
+#acceleration {
+ color: #EBEBEB;
+}
+
+* {
+ font-family: monospace;
+}
+body {
+ display: flex;
+ justify-content: center;
+ flex-direction: column;
+ background: #0F0F0F;
+}
+
+
+#myCanvas {
+  display: flex;
+  border: 2px solid #EBEBEB;
+  background: #020415;
+}
+
+#buttonClick {
+ top: 0;
+ left: 0;
+ height: 100%;
+ width: 100%;
+ position: absolute;
+ opacity: 0;
+}
+
+#gameOver {
+ position: absolute;
+ height: 100%;
+ width: 100%;
+ background: rgba(0, 0, 0, 0.5);
+ top: 0;
+ left: 0;
+ color: #EBEBEB;
+ font-size: 36px;
+ font-weight: bold;
+ text-align: center;
+ padding-top: 200px;
+ display: none;
+ animation: entrad 0.5s ;
+}
+
+#gameOver > button {
+ height: 30px;
+ width: 150px;
+ border: 2px solid #EBEBEB;
+ background: transparent;
+ color: white;
+ font-size: 16px;
+}
+
+@keyframes entrad {
+ 0% {
+  opacity: 0;
+ }
+ 100% {
+ opacity: 1;
+ }
+}
+
